@@ -1,0 +1,9 @@
+{
+  "name": "verpub-json-test",
+  "version": "0.0.1-beta.10",
+  "scripts": {
+    "test:bin:interact": "NODE_ENV=testing ../../../bin/verpub publish",
+    "test:bin": "NODE_ENV=testing ../../../bin/verpub publish -q",
+    "test": "NODE_ENV=testing npm run test:bin && find . | grep test.js | xargs mocha"
+  }
+}

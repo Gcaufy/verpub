@@ -1,0 +1,27 @@
+{
+  "name": "verpub",
+  "version": "0.0.1",
+  "description": "A semver publish tool",
+  "bin": "bin/verpub",
+  "main": "index.js",
+  "scripts": {
+    "pub": "./bin/verpub publish",
+    "pub:dry": "./bin/verpub publish --dry-run",
+    "test": "./test/test.sh"
+  },
+  "author": "Gcaufy <gcaufy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^3.0.1",
+    "enquirer": "^2.3.1",
+    "read-pkg": "^5.2.0",
+    "semver": "^6.3.0",
+    "write-pkg": "^4.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  },
+  "_id": "verpub@0.0.1",
+  "_commitid": "c520d3c"
+}

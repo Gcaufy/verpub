@@ -1,0 +1,6 @@
+{
+  "dryRun": "true",
+  "subPackage": {
+    "dir": "pkg"
+  }
+}

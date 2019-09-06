@@ -1,0 +1,18 @@
+{
+  "name": "verpub-pkg-test",
+  "version": "0.0.5-alpha.0",
+  "scripts": {
+    "test": "NODE_ENV=testing find . | grep test.js | xargs mocha"
+  },
+  "verpub": {
+    "dryRun": "true",
+    "publish": {
+      "client": "cnpm",
+      "options": [
+        "--a=b"
+      ]
+    }
+  },
+  "_id": "verpub-pkg-test@0.0.5-alpha.0",
+  "_commitid": "bdd952e"
+}
