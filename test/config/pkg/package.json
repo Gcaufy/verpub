@@ -1,0 +1,16 @@
+{
+  "name": "sempub-pkg-test",
+  "version": "0.0.5-alpha",
+  "scripts": {
+    "test": "NODE_ENV=testing find . | grep test.js | xargs mocha"
+  },
+  "sempub": {
+    "dryRun": "true",
+    "publish": {
+      "client": "cnpm",
+      "options": [
+        "--a=b"
+      ]
+    }
+  }
+}
