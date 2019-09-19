@@ -15,6 +15,7 @@
     "commander": "^3.0.1",
     "enquirer": "^2.3.1",
     "read-pkg": "^5.2.0",
+    "replace-in-file": "^4.1.3",
     "semver": "^6.3.0",
     "write-pkg": "^4.0.0"
   },
