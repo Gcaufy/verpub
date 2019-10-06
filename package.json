@@ -9,7 +9,14 @@
     "pub:dry": "./bin/verpub publish --dry-run",
     "test": "./test/test.sh"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gcaufy/verpub/"
+  },
+  "bugs": "https://github.com/Gcaufy/verpub/issues",
+  "homepage": "https://github.com/Gcaufy/verpub/",
   "author": "Gcaufy <gcaufy@gmail.com>",
+  "keywords": ["semver", "publish", "version"],
   "license": "MIT",
   "dependencies": {
     "commander": "^3.0.1",
