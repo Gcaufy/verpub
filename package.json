@@ -32,6 +32,8 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "mocha": "^6.2.0"
   },
   "_id": "verpub@0.0.5",

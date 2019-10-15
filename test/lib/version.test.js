@@ -8,7 +8,7 @@ const cases = [
     expect: {
       increase: 'patch',
       tag: null,
-      version: '1.2.4',
+      version: '1.2.4'
     }
   },
   {
@@ -16,7 +16,7 @@ const cases = [
     expect: {
       increase: 'prerelease',
       tag: null,
-      version: '1.2.3-1',
+      version: '1.2.3-1'
     }
   },
   {
@@ -24,7 +24,7 @@ const cases = [
     expect: {
       increase: 'prerelease',
       tag: null,
-      version: '1.2.3-0.4',
+      version: '1.2.3-0.4'
     }
   },
   {
@@ -32,7 +32,7 @@ const cases = [
     expect: {
       increase: 'prerelease',
       tag: 'alpha',
-      version: '1.2.3-alpha.0',
+      version: '1.2.3-alpha.0'
     }
   },
   {
@@ -40,16 +40,16 @@ const cases = [
     expect: {
       increase: 'prerelease',
       tag: 'alpha',
-      version: '1.2.3-alpha.21',
+      version: '1.2.3-alpha.21'
     }
-  },
-]
+  }
+];
 
-describe('version', function () {
+describe('version', function() {
   cases.forEach((c, i) => {
     let calced = getMinimumIncrease(c.input);
-    it(`${c.input} => ${calced.version}`, function () {
+    it(`${c.input} => ${calced.version}`, function() {
       expect(calced).to.be.deep.equal(c.expect);
     });
-  })
+  });
 });

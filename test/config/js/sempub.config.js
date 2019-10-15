@@ -1,3 +1,3 @@
 module = module.exports = {
-  dryRun: true,
-}
+  dryRun: true
+};
