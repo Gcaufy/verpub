@@ -91,6 +91,7 @@ module.exports = function interactPublish (name, opt) {
         choices: choices
       }).run();
     }).then((version) => {
+      publishOpt.version = version;
       return verpub.publish(publishOpt);
     })
   });
