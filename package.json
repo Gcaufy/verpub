@@ -1,6 +1,6 @@
 {
   "name": "verpub",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A semver publish tool",
   "bin": "bin/verpub",
   "main": "index.js",
@@ -16,7 +16,11 @@
   "bugs": "https://github.com/Gcaufy/verpub/issues",
   "homepage": "https://github.com/Gcaufy/verpub/",
   "author": "Gcaufy <gcaufy@gmail.com>",
-  "keywords": ["semver", "publish", "version"],
+  "keywords": [
+    "semver",
+    "publish",
+    "version"
+  ],
   "license": "MIT",
   "dependencies": {
     "commander": "^3.0.1",
@@ -30,6 +34,6 @@
     "chai": "^4.2.0",
     "mocha": "^6.2.0"
   },
-  "_id": "verpub@0.0.3",
-  "_commitid": "b43c827"
+  "_id": "verpub@0.0.5",
+  "_commitid": "e2d7f5f"
 }
