@@ -10,6 +10,9 @@
     "pub:dry": "./bin/verpub publish --dry-run",
     "test": "./test/test.sh"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Gcaufy/verpub/"
@@ -37,6 +40,7 @@
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
     "mocha": "^6.2.0",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.18.2"
   },
   "_id": "verpub@0.0.5",
