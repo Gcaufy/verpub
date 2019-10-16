@@ -5,6 +5,7 @@
   "bin": "bin/verpub",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ext .js ./",
     "pub": "./bin/verpub publish",
     "pub:dry": "./bin/verpub publish --dry-run",
     "test": "./test/test.sh"

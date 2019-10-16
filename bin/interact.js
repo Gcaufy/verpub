@@ -2,7 +2,7 @@ const path = require('path');
 const readPkg = require('read-pkg');
 const semver = require('semver');
 const chalk = require('chalk');
-const { prompt, Select, Input } = require('enquirer');
+const { Select, Input } = require('enquirer');
 
 const VerPub = require('../lib/verpub');
 

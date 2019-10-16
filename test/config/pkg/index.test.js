@@ -11,7 +11,7 @@ describe('require', function() {
     expect(s.opt.minIncrease).to.deep.equal(version.getMinimumIncrease(s.pkg.version));
 
     expect(s.opt.publish).to.deep.equal(require('./package.json').verpub.publish);
-    s.publish().then(e => {
+    s.publish().then(() => {
       done();
     });
   });

@@ -1,3 +1,3 @@
-module = module.exports = {
+exports = module.exports = {
   dryRun: true
 };

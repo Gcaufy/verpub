@@ -1,5 +1,5 @@
 const verpub = require('./lib/verpub');
 
-module = module.exports = function semverPublish(params) {
+exports = module.exports = function semverPublish(params) {
   return new verpub().publish(params);
 };

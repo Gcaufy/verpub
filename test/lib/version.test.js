@@ -46,7 +46,7 @@ const cases = [
 ];
 
 describe('version', function() {
-  cases.forEach((c, i) => {
+  cases.forEach(c => {
     let calced = getMinimumIncrease(c.input);
     it(`${c.input} => ${calced.version}`, function() {
       expect(calced).to.be.deep.equal(c.expect);
