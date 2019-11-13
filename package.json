@@ -34,7 +34,7 @@
     "read-pkg": "^5.2.0",
     "replace-in-file": "^4.1.3",
     "semver": "^6.3.0",
-    "write-pkg": "^4.0.0"
+    "write-json-file": "^4.2.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
