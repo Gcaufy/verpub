@@ -1,6 +1,6 @@
 {
   "name": "verpub",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A semver publish tool",
   "bin": "bin/verpub",
   "main": "index.js",
@@ -45,6 +45,6 @@
     "mocha": "^6.2.0",
     "prettier": "^1.18.2"
   },
-  "_id": "verpub@0.0.6",
-  "_commitid": "c203cc1"
+  "_id": "verpub@0.0.7",
+  "_commitid": "8dc4db7"
 }
