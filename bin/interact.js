@@ -14,6 +14,8 @@ module.exports = function interactPublish(name, opt) {
 
   let flow = Promise.resolve(name);
 
+  let publishOpt = {};
+
   if (verpub.opt.subPackage.enable) {
     if (!name) {
       const util = require('util');
@@ -38,6 +40,7 @@ module.exports = function interactPublish(name, opt) {
       process.chdir(cwd);
 
       let pkg = readPkg.sync({ cwd: './' });
+      publishOpt.dir = name;
       return pkg;
     });
   } else {
@@ -49,11 +52,9 @@ module.exports = function interactPublish(name, opt) {
       verpub.logger.info('Publish package: ' + chalk.cyan(`${pkg.name}@${pkg.version}`));
     }
 
-    let publishOpt = {
-      version: opt.ver || '',
-      tag: opt.tag || '',
-      pkg: pkg
-    };
+    publishOpt.version = opt.ver || '';
+    publishOpt.tag = opt.tag || '';
+    publishOpt.pkg = pkg;
 
     return new Select({
       name: 'tag',
