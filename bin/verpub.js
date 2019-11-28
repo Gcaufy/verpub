@@ -2,9 +2,14 @@
 
 const commander = require('commander');
 
+commander.command('init').action(require('./cmd/init'));
+
 commander
-  .command('init')
-  .action(require('./cmd/init'))
+  .command('view [name]')
+  .option('-l, --list', 'show changed file list')
+  .action(require('./cmd/view'));
+
+commander
   .command('publish [name]')
   .option('-t, --tag <tag>', 'publish tag')
   .option('-v, --version <ver>', 'publish version')
