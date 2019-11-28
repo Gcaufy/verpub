@@ -1,8 +1,10 @@
 {
   "name": "verpub-js-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "test:bin": "NODE_ENV=testing ../../../bin/verpub publish -q --dry-run",
     "test": "NODE_ENV=testing npm run test:bin && find . | grep test.js | xargs mocha"
-  }
+  },
+  "_id": "verpub-js-test@0.0.2",
+  "_commitid": "c734637"
 }
