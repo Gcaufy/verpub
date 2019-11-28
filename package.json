@@ -9,8 +9,8 @@
   "scripts": {
     "lint": "eslint --ext .js ./",
     "test": "./test/test.sh",
-    "release": "./node_modules/.bin/verpub publish",
-    "release:dry": "./node_modules/.bin/verpub --dry-run"
+    "release": "./bin/verpub publish",
+    "release:dry": "./bin/verpub --dry-run"
   },
   "husky": {
     "hooks": {
