@@ -4,12 +4,11 @@ const semver = require('semver');
 const chalk = require('chalk');
 const { Select, Input } = require('enquirer');
 
-const VerPub = require('../lib/verpub');
-
+const VerPub = require('../../lib/verpub');
 /*
  * interact publish a npm package
  */
-module.exports = function interactPublish(name, opt) {
+function interactPublish(name, opt) {
   const verpub = new VerPub({ interact: opt.interact, dryRun: opt.dryRun });
 
   let flow = Promise.resolve(name);
@@ -101,4 +100,26 @@ module.exports = function interactPublish(name, opt) {
         return verpub.publish(publishOpt);
       });
   });
+}
+
+module.exports = function(name, opt) {
+  name = name || '';
+  if (opt.interact) {
+    interactPublish(name, opt).catch(e => {
+      console.error(e);
+    });
+  } else {
+    let verpub = new VerPub();
+    verpub
+      .publish({
+        name: name,
+        tag: opt.tag,
+        increase: opt.increase,
+        interact: false,
+        dryRun: opt.dryRun
+      })
+      .catch(e => {
+        verpub.logger.error(e);
+      });
+  }
 };

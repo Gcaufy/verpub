@@ -2,13 +2,15 @@
   "name": "verpub",
   "version": "0.0.7",
   "description": "A semver publish tool",
-  "bin": "bin/verpub",
+  "bin": {
+    "verpub": "bin/verpub"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js ./",
-    "release": "./bin/verpub publish",
-    "release:dry": "./bin/verpub publish --dry-run",
-    "test": "./test/test.sh"
+    "test": "./test/test.sh",
+    "release": "./node_modules/.bin/verpub publish",
+    "release:dry": "./node_modules/.bin/verpub --dry-run"
   },
   "husky": {
     "hooks": {
@@ -17,11 +19,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gcaufy/verpub/"
+    "url": "git+https://github.com/Gcaufy/verpub.git"
   },
-  "bugs": "https://github.com/Gcaufy/verpub/issues",
+  "bugs": {
+    "url": "https://github.com/Gcaufy/verpub/issues"
+  },
   "homepage": "https://github.com/Gcaufy/verpub/",
-  "author": "Gcaufy <gcaufy@gmail.com>",
+  "author": {
+    "name": "Gcaufy",
+    "email": "gcaufy@gmail.com"
+  },
   "keywords": [
     "semver",
     "publish",
@@ -46,5 +53,6 @@
     "prettier": "^1.18.2"
   },
   "_id": "verpub@0.0.7",
-  "_commitid": "8dc4db7"
+  "_commitid": "8dc4db7",
+  "readme": "ERROR: No README data found!"
 }
