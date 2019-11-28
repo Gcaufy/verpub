@@ -7,7 +7,7 @@ const { loadPackages } = require('../../lib/util/package');
 const { checkUpdates } = require('../../lib/util/check');
 
 function infoAndCheckUpdates(vp, pkgWithCheck) {
-  const pkg = pkgWithCheck;
+  const pkg = pkgWithCheck.pkg;
   vp.logger.info('Publish package: ' + chalk.cyan(`${pkg.name}@${pkg.version}`));
   return Promise.resolve()
     .then(() => {
