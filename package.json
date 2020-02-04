@@ -1,6 +1,6 @@
 {
   "name": "verpub",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A semver publish tool",
   "bin": {
     "verpub": "bin/verpub"
@@ -56,7 +56,7 @@
     "mocha": "^6.2.0",
     "prettier": "^1.18.2"
   },
-  "_id": "verpub@0.1.1",
-  "_commitid": "b5986a6",
+  "_id": "verpub@0.1.2",
+  "_commitid": "5af48c0",
   "readme": "ERROR: No README data found!"
 }
