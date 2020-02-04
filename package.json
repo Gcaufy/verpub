@@ -41,6 +41,7 @@
     "enquirer": "^2.3.1",
     "execa": "^3.4.0",
     "node-time-ago": "^1.0.0",
+    "promise-timeout": "^1.3.0",
     "read-pkg": "^5.2.0",
     "replace-in-file": "^4.1.3",
     "semver": "^6.3.0",
