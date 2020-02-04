@@ -1,3 +1,4 @@
+const path = require('path');
 const semver = require('semver');
 const chalk = require('chalk');
 const { Select, Input } = require('enquirer');
@@ -112,14 +113,15 @@ function loadAndCheck(vp, name) {
  */
 function interactPublish(name, opt) {
   const verpub = new VerPub({ interact: opt.interact, dryRun: opt.dryRun });
-
   let publishOpt = {};
-
   return loadAndCheck(verpub, name)
     .then(pkgWithCheck => {
       // subdir publish
       if (pkgWithCheck.dir) {
         publishOpt.dir = pkgWithCheck.dir;
+        publishOpt.pkg = pkgWithCheck.pkg;
+        publishOpt.check = pkgWithCheck.check;
+        publishOpt.cwd = path.join(verpub.opt.subPackage.dir, pkgWithCheck.dir);
       }
       return infoAndCheckUpdates(verpub, pkgWithCheck);
     })
