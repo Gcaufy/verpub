@@ -18,11 +18,11 @@
     }
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/Gcaufy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gcaufy/verpub.git"
+    "url": "git://github.com/Gcaufy/verpub.git"
   },
   "bugs": {
     "url": "https://github.com/Gcaufy/verpub/issues"
