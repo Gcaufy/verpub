@@ -17,9 +17,6 @@
       "pre-commit": "npm run lint"
     }
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/Gcaufy"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/Gcaufy/verpub.git"
