@@ -142,15 +142,15 @@ module.exports = function(name, opt) {
     });
   } else {
     let verpub = new VerPub();
+    let param = Object.assign({}, {
+      name: name,
+      tag: opt.tag,
+      version: opt.version && typeof opt.version === 'string' ? opt.version : '',
+      interact: false,
+      dryRun: opt.dryRun
+  }, opt.increase ? { increase: opt.increase } : {})
     verpub
-      .publish({
-        name: name,
-        tag: opt.tag,
-        increase: opt.increase,
-        version: opt.version,
-        interact: false,
-        dryRun: opt.dryRun
-      })
+      .publish(param)
       .catch(e => {
         verpub.logger.error(e);
       });
