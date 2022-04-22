@@ -147,6 +147,7 @@ module.exports = function(name, opt) {
         name: name,
         tag: opt.tag,
         increase: opt.increase,
+        version: opt.version,
         interact: false,
         dryRun: opt.dryRun
       })
