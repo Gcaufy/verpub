@@ -14,6 +14,7 @@ commander
   .option('-t, --tag <tag>', 'publish tag')
   .option('-v, --version <ver>', 'publish version')
   .option('-i, --increase <increase>', 'version increase')
+  .option('-d, --desc <description>', 'tag description')
   .option('-q, --no-interact', 'with out interact')
   .option('--dry-run', 'dry run test')
   .action(require('./cmd/publish'));

@@ -1,11 +1,11 @@
 {
   "name": "verpub-json-test",
-  "version": "0.0.1-beta.11",
+  "version": "0.0.1-beta.13",
   "scripts": {
     "test:bin:interact": "NODE_ENV=testing ../../../bin/verpub publish",
-    "test:bin": "NODE_ENV=testing ../../../bin/verpub publish -q",
+    "test:bin": "NODE_ENV=testing ../../../bin/verpub publish -q -d 测试",
     "test": "NODE_ENV=testing npm run test:bin && find . | grep test.js | xargs mocha"
   },
-  "_id": "verpub-json-test@0.0.1-beta.11",
-  "_commitid": "c734637"
+  "_id": "verpub-json-test@0.0.1-beta.13",
+  "_commitid": "211a193"
 }

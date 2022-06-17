@@ -149,7 +149,8 @@ module.exports = function(name, opt) {
         tag: opt.tag,
         version: opt.version && typeof opt.version === 'string' ? opt.version : '',
         interact: false,
-        dryRun: opt.dryRun
+        dryRun: opt.dryRun,
+        desc: opt.desc
       },
       opt.increase ? { increase: opt.increase } : {}
     );

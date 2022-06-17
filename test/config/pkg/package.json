@@ -1,6 +1,6 @@
 {
   "name": "verpub-pkg-test",
-  "version": "0.0.5-alpha.1",
+  "version": "0.0.5-alpha.3",
   "scripts": {
     "test": "NODE_ENV=testing find . | grep test.js | xargs mocha"
   },
@@ -13,6 +13,6 @@
       ]
     }
   },
-  "_id": "verpub-pkg-test@0.0.5-alpha.1",
-  "_commitid": "c734637"
+  "_id": "verpub-pkg-test@0.0.5-alpha.3",
+  "_commitid": "211a193"
 }
