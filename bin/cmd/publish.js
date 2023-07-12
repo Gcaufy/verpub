@@ -151,8 +151,7 @@ module.exports = function(name, opt) {
         interact: false,
         dryRun: opt.dryRun,
         desc: opt.desc,
-        commitMsg: opt.commitMsg,
-        commitSuffix: opt.commitSuffix
+        customizeCommit: opt.customizeCommit
       },
       opt.increase ? { increase: opt.increase } : {}
     );
