@@ -150,7 +150,9 @@ module.exports = function(name, opt) {
         version: opt.version && typeof opt.version === 'string' ? opt.version : '',
         interact: false,
         dryRun: opt.dryRun,
-        desc: opt.desc
+        desc: opt.desc,
+        commitMsg: opt.commitMsg,
+        commitSuffix: opt.commitSuffix
       },
       opt.increase ? { increase: opt.increase } : {}
     );
